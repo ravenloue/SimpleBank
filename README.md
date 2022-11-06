@@ -47,15 +47,14 @@ Thanks to the tutorial from WittCode, I was able to learn how to properly connec
 ### Continued development
 
 - November 6, 2022
-At this point, I have finished the initial connections for checking the mobile login table for valid usernames, creating new mobile logins for valid accounts and error handling to allow the program to still run without crashing. Up next is the banking functionality.
+  - At this point, I have finished the initial connections for checking the mobile login table for valid usernames, creating new mobile logins for valid accounts and error handling to allow the program to still run without crashing. Up next is the banking functionality. 
+  - I also took some time to update the readme file to provide more information.  
 
-I also took some time to update the readme file to provide more information.  
-
-- July 2022
-Completed Database course. Used the knowledge from this course to create the database for the app to connect.
+- July 2022 
+  - Completed Database course. Used the knowledge from this course to create the database for the app to connect.
 
 - May 2022
-Finished Web Programming 1 which gave me a little more practice in CSS. Using this I created the initial UI concept for the Main, Logged In, and Sign Up pages. 
+  - Finished Web Programming 1 which gave me a little more practice in CSS. Using this I created the initial UI concept for the Main, Logged In, and Sign Up pages. 
 
 ### Useful resources
 
