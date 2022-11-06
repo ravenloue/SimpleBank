@@ -20,7 +20,9 @@ public class LoggedInController implements Initializable {
 
 	public void setUserInformation(String userName) {
 		
-		welcomeLabel.setText("Welcome "+userName+".");
+		String fullName = Utilities.getUserName(userName);
+		
+		welcomeLabel.setText("Welcome "+fullName+".");
 		
 	}
 

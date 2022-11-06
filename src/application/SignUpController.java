@@ -13,7 +13,7 @@ import javafx.scene.control.TextField;
 public class SignUpController implements Initializable{
 	
 	@FXML
-	TextField acctEmail, acctNumber, userName, passWord;
+	TextField acctNumber, userName, passWord;
 	@FXML
 	Button createAcctBtn, logInBtn;
 	
@@ -23,7 +23,7 @@ public class SignUpController implements Initializable{
 		createAcctBtn.setOnAction(new EventHandler<ActionEvent>(){
 			@Override
 			public void handle(ActionEvent evt) {
-				Utilities.signUpUser(evt, acctNumber.getText(), userName.getText(), passWord.getText());
+				Utilities.signUpUser(evt, acctNumber.getText().trim(), userName.getText().trim(), passWord.getText().trim());
 			}
 		});
 		

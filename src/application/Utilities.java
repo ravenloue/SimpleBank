@@ -17,6 +17,8 @@ import javafx.stage.Stage;
 
 public class Utilities {
 	
+	// Main Page & Sign Up Utilities
+	
 	public static void changeScene(ActionEvent evt, String fxmlFile, String title, String userName, String passWord) {
 		Parent root = null;
 		
@@ -250,5 +252,78 @@ public class Utilities {
 			}
 		}
 	}// end of logInUser
+
+	// Logged In Utilities
+	
+	public static String getUserName(String userName) {
+		
+		Connection connection = null;
+		PreparedStatement pStatement = null;
+		PreparedStatement pStatement2 = null;
+		ResultSet rSet = null;
+		ResultSet rSet2 = null;
+		String cusID = null, fullName = "";
+		
+		try {
+		// First open a connection to the database
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/simplebank", "root", "toor");
+		
+		// Then locate the username in the log in table and assign the customer ID to variable
+			pStatement = connection.prepareStatement("SELECT custID from mobilelogin where accName = ?");
+			pStatement.setString(1, userName);
+			rSet = pStatement.executeQuery();
+			
+			while(rSet.next()) {
+				String custID = rSet.getString("custID");
+				cusID = custID;
+			}
+			
+		
+		// Next use the retrieved customer ID to return the name to the method call
+			pStatement2 = connection.prepareStatement("Select fName, lName from customer where custID = ?");
+			pStatement2.setString(1, cusID);
+			rSet2 = pStatement2.executeQuery();
+			
+			while(rSet2.next()) {
+				String fName = rSet2.getString("fName");
+				String lName = rSet2.getString("lName");
+				
+				fullName = fName+" "+lName;
+			}
+			
+			return fullName;
+			
+		}
+		// Catch any SQL exceptions
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		// Close all opened connections
+		finally {
+			if(rSet != null) {
+				try {
+					rSet.close();
+				} catch(SQLException e) {
+					e.printStackTrace();
+			}
+			}
+			if(pStatement != null) {
+				try {
+					pStatement.close();
+				} catch(SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if(connection != null) {
+				try {
+					connection.close();
+				} catch(SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		return fullName;
+		
+	}// end of getUserName
 	
 }// end of Utilities

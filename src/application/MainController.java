@@ -27,7 +27,7 @@ public class MainController implements Initializable{
 		loginBtn.setOnAction(new EventHandler<ActionEvent> () {
 			@Override
 			public void handle(ActionEvent evt) {
-				Utilities.logInUser(evt, userName.getText(), passWord.getText());
+				Utilities.logInUser(evt, userName.getText().trim(), passWord.getText().trim());
 			}
 		});
 		
