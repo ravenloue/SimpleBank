@@ -32,22 +32,27 @@
                   <Font name="Segoe UI" size="10.0" />
                </font>
             </Label>
-            <Button fx:id="acctBtn" layoutX="18.0" layoutY="200.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer;" text="Accounts" textAlignment="CENTER">
+            <Button fx:id="acctBtn" layoutX="18.0" layoutY="200.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer; -fx-background-insets: 1px;" text="Accounts" textAlignment="CENTER">
                <font>
                   <Font name="Segoe UI Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="transferBtn" layoutX="18.0" layoutY="237.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer;" text="Transfer" textAlignment="CENTER">
+            <Button fx:id="transferBtn" layoutX="18.0" layoutY="237.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer; -fx-background-insets: 1px;" text="Transfer" textAlignment="CENTER">
                <font>
                   <Font name="Segoe UI Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="depositBtn" layoutX="18.0" layoutY="274.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer;" text="Deposit" textAlignment="CENTER">
+            <Button fx:id="depositBtn" layoutX="18.0" layoutY="274.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer; -fx-background-insets: 1px;" text="Deposit" textAlignment="CENTER">
                <font>
                   <Font name="Segoe UI Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="moreServiceBtn" layoutX="18.0" layoutY="311.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer;" text="More ..." textAlignment="CENTER">
+            <Button fx:id="moreServiceBtn" layoutX="18.0" layoutY="311.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer; -fx-background-insets: 1px;" text="More ..." textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOutBtn" layoutX="18.0" layoutY="348.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer; -fx-background-insets: 1px;" text="Log Out" textAlignment="CENTER">
                <font>
                   <Font name="Segoe UI Bold" size="15.0" />
                </font>
@@ -56,7 +61,7 @@
       </AnchorPane>
       <AnchorPane maxWidth="540.0" prefHeight="400.0" prefWidth="540.0" style="-fx-background-color: #f7f8fc;">
          <children>
-            <Label layoutX="103.0" layoutY="151.0" text="Username" textAlignment="CENTER" textFill="#545365">
+            <Label fx:id="welcomeLabel" layoutX="14.0" layoutY="14.0" text="Welcome &lt;username&gt;" textAlignment="CENTER" textFill="#545365">
                <font>
                   <Font name="Segoe UI Bold" size="20.0" />
                </font>

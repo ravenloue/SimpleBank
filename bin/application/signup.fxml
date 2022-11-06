@@ -38,33 +38,37 @@
       </AnchorPane>
       <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #f7f8fc;">
          <children>
-            <Label layoutX="79.0" layoutY="83.0" text="Email Address" textAlignment="CENTER" textFill="#545365">
+            <Label layoutX="70.0" layoutY="78.0" text="Account Number" textAlignment="CENTER" textFill="#545365">
                <font>
                   <Font name="Segoe UI Bold" size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="acctEmail" layoutX="76.0" layoutY="107.0" promptText="email address" />
-            <Label layoutX="70.0" layoutY="139.0" text="Account Number" textAlignment="CENTER" textFill="#545365">
+            <TextField fx:id="acctNumber" layoutX="76.0" layoutY="102.0" promptText="account number" />
+            <Label layoutX="103.0" layoutY="127.0" text="Username" textAlignment="CENTER" textFill="#545365">
                <font>
                   <Font name="Segoe UI Bold" size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="acctNumber" layoutX="76.0" layoutY="163.0" promptText="account number" />
-            <Label layoutX="103.0" layoutY="188.0" text="Username" textAlignment="CENTER" textFill="#545365">
+            <TextField fx:id="userName" layoutX="76.0" layoutY="151.0" promptText="username" />
+            <Label layoutX="106.0" layoutY="176.0" text="Password" textAlignment="CENTER" textFill="#545365">
                <font>
                   <Font name="Segoe UI Bold" size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="userName" layoutX="76.0" layoutY="212.0" promptText="username" />
-            <Label layoutX="106.0" layoutY="237.0" text="Password" textAlignment="CENTER" textFill="#545365">
-               <font>
-                  <Font name="Segoe UI Bold" size="20.0" />
-               </font>
-            </Label>
-            <PasswordField fx:id="passWord" layoutX="77.0" layoutY="261.0" promptText="password" />
-            <Button fx:id="createAcctBtn" layoutX="50.0" layoutY="304.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer;" text="Sign Up" textAlignment="CENTER">
+            <PasswordField fx:id="passWord" layoutX="77.0" layoutY="200.0" promptText="password" />
+            <Button fx:id="createAcctBtn" layoutX="50.0" layoutY="233.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to bottom, #dcdfee 5%, #878a99 100%); -fx-border-color: #202136; -fx-border-radius: 6px; -fx-cursor: pointer;" text="Sign Up" textAlignment="CENTER">
                <font>
                   <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="50.0" layoutY="300.0" text="Already a member?" textAlignment="CENTER" textFill="#545365">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="logInBtn" layoutX="190.0" layoutY="295.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: transparent;" text="Log In" textAlignment="CENTER" textFill="#0051ff" underline="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
                </font>
             </Button>
          </children>
