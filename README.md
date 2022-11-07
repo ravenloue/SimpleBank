@@ -27,7 +27,7 @@ The Java project list from Comp Sci Central mentioned a simple banking applicati
 
 ### Screenshot
 
-![]() N/A right now
+![Front Page](https://github.com/ravenloue/SimpleBank/blob/main/lib/MainPage.png)
 
 
 ## My process
